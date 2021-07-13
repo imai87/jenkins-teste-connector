@@ -1,10 +1,5 @@
-pipeline {
-    agent any
-    stages {
-        stage('Stage 1') {
-            steps {
-                echo 'Hello world! Teste!!!'
-            }
-        }
+node("java8") {
+    stage('Stage 1') {
+        echo 'Hello world! Teste!!!'
     }
 }
